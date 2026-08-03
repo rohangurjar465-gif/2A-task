@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Dashboard</title>
+
+    <style>
+        table{
+            width:80%;
+            /* border-collapse:collapse; */
+            margin:auto;
+            text-align:center;
+        }
+
+        th,td{
+            border:1px solid black;
+            padding:10px;
+        }
+
+        thead{
+            background-color:rgb(223, 192, 52);
+            font-weight: bolder;
+        }
+
+        tfoot{
+            background-color:rgb(192, 178, 178);
+            font-weight:bold;
+        }
+      tbody{
+        background-color: rgb(166, 172, 170);
+        font-size: large;
+        font-weight: bold;
+      }
+        caption{
+            font-size:25px;
+            margin:10px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+
+    <caption>Student Marks Dashboard</caption>
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Rohan</td>
+            <td>85</td>
+            <td>90</td>
+            <td>88</td>
+        </tr>
+
+        <tr>
+            <td>Aman</td>
+            <td>78</td>
+            <td>82</td>
+            <td>80</td>
+        </tr>
+
+        <tr>
+            <td>Sneha</td>
+            <td>92</td>
+            <td>95</td>
+            <td>91</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="4">Total Students : 3</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+</body>
+</html>

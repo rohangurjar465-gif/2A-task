@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="btn" disabled>Resend OTP</button>
+
+<p id="msg">Please wait 10 seconds...</p>
+
+<script>
+
+let btn = document.getElementById("btn");
+let msg = document.getElementById("msg");
+
+setTimeout(() => {
+
+    btn.disabled = false;
+
+    msg.innerHTML = "Now you can resend OTP";
+
+}, 10000);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Student Table</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="number" id="age" placeholder="Enter Age">
+
+    <button id="add">Add</button>
+    
+
+    <br><br>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Name</th>
+
+                <th>Age</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+    <script>
+
+        let name = document.querySelector("#name");
+
+        let age = document.querySelector("#age");
+
+        let add = document.querySelector("#add");
+
+        let tbody = document.querySelector("#tbody");
+
+        add.addEventListener("click",()=>{
+            if (name.value=="" || age.value=="") {
+                alert("fill pls");
+                return;
+            }
+          
+            let tr=document.createElement("tr");
+            
+            tr.innerHTML=`
+            <td>${name.value}</td>
+            <td>${age.value}</td>
+            <td>
+                <button class="delete">Delete</button>
+            </td>`;
+            
+            tbody.appendChild(tr);
+
+            name.value="";
+            age.value="";
+        });
+
+
+
+tbody.addEventListener("click",(event)=>{
+
+if(event.target.classList.contains("delete")){
+
+event.target.parentElement.parentElement.remove();
+
+}
+
+});
+    </script>
+</body>
+
+</html>

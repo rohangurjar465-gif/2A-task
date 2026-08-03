@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clike chnage random quote</title>
+</head>
+<body>
+
+<h1 id="quote"></h1> 
+<button id="clicke">chnage random quote</button>
+
+
+</body>
+<script>
+    let quotes = [
+    "Never Give Up",
+    "Work Hard",
+    "Success Needs Patience",
+    "Believe Yourself",
+    "Dream Big"
+];
+    let queto=document.querySelector("#quote");
+    let btn=document.querySelector("#clicke");
+
+    btn.addEventListener("click",()=>{
+        let qut=Math.floor(Math.random() *quotes.length);
+        // let qut = Math.floor(Math.random() * quotes.length);
+         queto.innerHTML=quotes[qut];
+    });
+</script>
+</html>

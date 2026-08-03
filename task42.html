@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="pass" placeholder="Enter Password">
+
+<h3 id="result"></h3>
+
+<script>
+    let pass=document.querySelector("#pass");
+    let result=document.querySelector("#result");
+    let value=pass;
+   pass.addEventListener("keyup",()=>{
+    let value=pass.value;
+    setTimeout(() => {
+   if (value.length < 4) {
+
+    result.innerHTML = "Weak";
+
+}
+else if (value.length < 6) {
+
+    result.innerHTML = "Medium";
+
+}
+else {
+
+    result.innerHTML = "Strong";
+
+}
+    }, 3000);
+   });
+</script>
+</body>
+</html>

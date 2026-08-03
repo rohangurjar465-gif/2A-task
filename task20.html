@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root{
+    --bg-color:white;
+    --text-color:black;
+}
+.dark{
+    --bg-color:black;
+    --text-color:white;
+}
+body{
+    background:var(--bg-color);
+    color:var(--text-color);
+    text-align:center;
+    padding-top:50px;
+}
+button{
+    padding:10px 20px;
+}
+</style>
+</head>
+
+<body id="body">
+
+<h1>rohan gujjar</h1>
+
+<button id="btn">
+ boton 
+</button>
+
+<script>
+
+let btn = document.getElementById("btn");
+
+let body = document.getElementById("body");
+
+btn.addEventListener("click",()=>{
+
+    body.classList.toggle("dark");
+
+    // add use kro 
+
+});
+
+</script>
+
+</body>
+</html>

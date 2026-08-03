@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Modal</title>
+
+    <style>
+        .modal{
+            width:300px;
+            padding:20px;
+            border:2px solid black;
+            margin:auto;
+            margin-top:100px;
+            border-radius:10px;
+            text-align:center;
+        }
+
+        input{
+            width:90%;
+            padding:8px;
+            margin:10px 0;
+        }
+
+        button{
+            padding:8px 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--role isko is liye use krt tki broweser in extr info dna k liy y scrn reader ko bty elemnt kr ky rh hai  -->
+
+    <div 
+        class="modal"
+        role="dialog"
+        aria-label="Login Form">
+
+        <h2>Login</h2>
+
+        <form>
+
+            <label for="email">Email</label><br>
+
+            <input 
+                type="email"
+                id="email"
+                aria-label="Enter Email">
+
+            <br>
+
+            <label for="password">Password</label><br>
+
+            <input 
+                type="password"
+                id="password"
+                aria-label="Enter Password">
+
+            <br><br>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

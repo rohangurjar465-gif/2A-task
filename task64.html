@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Theme Switcher</title>
+
+<style>
+
+body{
+    background:white;
+    color:black;
+    transition:0.8s;
+}
+
+.dark{
+    background:black;
+    color:white;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Theme Switcher</h1>
+
+<button id="btn">
+Change Theme
+</button>
+
+<script>
+
+let btn=document.querySelector("#btn");
+
+btn.addEventListener("click",()=>{
+
+document.body.classList.toggle("dark");
+
+});
+
+</script>
+
+</body>
+</html>

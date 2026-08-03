@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increament</title>
+</head>
+<body>
+    <h1 id="count">0</h1>
+    <button id="inc">inc</button>
+        <button id="dec">dec</button>
+
+            <button id="reset">reset</button>
+
+</body>
+<script>
+    count=0;
+let heading = document.querySelector("#count");
+let inc = document.querySelector("#inc");
+let dec=document.querySelector("#dec");
+let reset=document.querySelector("#reset");
+    
+ inc.addEventListener("click",()=>{
+    count++;
+ heading.innerHTML=count;
+ });
+ dec.addEventListener("click",()=>{
+   
+    if (count>0) {
+      count--;
+     heading.innerHTML=count;
+    }
+ 
+ });
+  reset.addEventListener("click",()=>{
+    heading.innerHTML=0;
+  })
+</script>
+</html>

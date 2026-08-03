@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Toast Notification</title>
+
+<style>
+
+#toast{
+
+display:none;
+
+background:green;
+
+color:white;
+
+padding:15px;
+
+position:fixed;
+
+right:20px;
+
+top:20px;
+
+}
+
+#toast.show{
+
+display:block;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button id="btn">
+
+Show Notification
+
+</button>
+
+<div id="toast">
+
+ Successfully Done
+
+</div>
+
+<script>
+
+let btn=document.querySelector("#btn");
+
+let toast=document.querySelector("#toast");
+
+btn.addEventListener("click",()=>{
+
+toast.classList.add("show");
+
+setTimeout(()=>{
+
+toast.classList.remove("show");
+
+},2000);
+
+});
+
+</script>
+
+</body>
+</html>

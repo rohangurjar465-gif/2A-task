@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Delegation</title>
+
+    <style>
+        #container {
+
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .card {
+
+            width: 120px;
+            height: 120px;
+            background: skyblue;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+
+            font-size: 20px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div class="card">1</div>
+
+        <div class="card">2</div>
+
+        <div class="card">3</div>
+
+    </div>
+
+    <script>D
+
+        let container = document.querySelector("#container");
+
+        container.addEventListener("click", (event) => {
+
+            if (event.target.classList.contains("card")) {
+
+                alert("Card " + even.target.innerHTML + " Clicked");
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

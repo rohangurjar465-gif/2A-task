@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navbar</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        nav{
+            background:black;
+            padding:15px;
+        }
+
+        ul{
+            display:flex;
+            justify-content:space-between;
+            /* gap:20px; */
+            /* list-style:none; */
+            flex-wrap:wrap;
+        }
+
+        a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+        }
+
+        /* Responsive */
+        @media(max-width:600px){
+
+            ul{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav role="navigation" aria-label="Main Navigation">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</body>
+</html>

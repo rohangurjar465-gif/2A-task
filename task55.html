@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Live Search</title>
+
+<style>
+
+body{
+
+font-family:Arial;
+text-align:center;
+margin-top:40px;
+
+}
+
+input{
+
+padding:10px;
+width:300px;
+
+}
+
+li{
+
+list-style:none;
+padding:10px;
+font-size:22px;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<h2>Live Search</h2>
+
+<input type="text" id="search" placeholder="Search Fruit">
+
+<ul id="list">
+
+</ul>
+
+<script>
+
+let fruits=[
+"Apple",
+"Banana",
+"Mango",
+"Orange",
+"Grapes",
+"Papaya",
+"Guava"
+];
+
+let search=document.querySelector("#search");
+
+let list=document.querySelector("#list");
+
+function showData(arr){
+
+list.innerHTML="";
+
+arr.forEach((item)=>{
+
+list.innerHTML+=`<li>${item}</li>`;
+
+});
+
+}
+
+showData(fruits);
+
+search.addEventListener("input",()=>{
+
+let text=search.value.toLowerCase();
+
+let result=fruits.filter((item)=>{
+
+return item.toLowerCase().includes(text);
+
+});
+
+showData(result);
+
+});
+
+</script>
+
+</body>
+</html>

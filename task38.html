@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2 id="msg">Loading...</h2>
+
+<script>
+
+function loadData(callback){
+
+    setTimeout(() => {
+
+        callback();
+
+    }, 3000);
+
+}
+
+function showData(){
+
+    document.getElementById("msg").innerHTML =
+    "Data Loaded Successfully";
+
+   let body= document.querySelector("body");
+   body.style.background="black";
+   body.style.color="white";
+        
+}
+
+loadData(showData);
+
+</script>
+
+</body>
+</html>
