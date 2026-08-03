@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="btn">save</button>
+    <button id="stylebtn">style</button>
+    <h1 id="h1">welcome to dom</h1>
+    <p id="pr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus deserunt necessitatibus? Nobis provident, ratione eaque temporibus veritatis nulla, eos quis corrupti laudantium illum, voluptatibus quas ipsam expedita blanditiis impedit!
+    </p>
+  
+        let btn= document.querySelector("#btn");
+        let hading=document.querySelector("#h1");
+        let parra=document.querySelector("#pr");
+
+        btn.addEventListener("click",()=>{
+          
+            let temp=parra.innerHTML;
+            parra.innerHTML=hading.innerHTML;
+            hading.innerHTML=temp;
+
+            
+        });
+     let stlybtn=document.querySelector("#stylebtn");
+     stlybtn.addEventListener("click",()=>{
+        parra.style.color="red";
+       hading.style.fontSize="50px";
+        
+     }) -->
+
+ <button id="btn">form </button>
+    <DIV class="model">
+     <h2>demo form <span id="clik">&times;</span></h2>
+    </DIV>
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        }
+        
+        html,body{
+        height: 100%;
+        width: 100%;
+        }
+        .model{
+            width: 350px;
+            height: 350px;
+            display: none;
+            box-shadow: 0px 0px 20px rgb(122, 43, 43);
+              position: fixed;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50% ,-50%);
+              
+            
+        }
+
+        .model h2{
+            text-align: center;
+            position: relative;
+            top: 3px;
+
+        }
+        #clik{
+            position: absolute;
+            right:4px;
+            cursor: pointer;
+
+            
+        }
+    </style>
+
+
+  <script> 
+    let btn=document.querySelector("#btn");
+    let click=document.querySelector("#clik");
+    let model=document.querySelector(".model");
+    btn.addEventListener("click", ()=>{
+        model.style.display="block";
+    });
+  click.addEventListener("click",()=>{
+    model.style.display="none";
+  })
+
+  </script>
+
+
+
+</body>
+</html>

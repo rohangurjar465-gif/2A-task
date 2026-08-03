@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product App Create product listing page UI.</title>
+  
+    <style>
+        .card{
+    margin-left: 60px;
+ display: grid;
+grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    gap: 50px;
+   
+}
+
+
+    </style>
+  
+</head>
+<body>
+    <div class="btns">
+        <button class="filtres" data-cat="all">all</button>
+        <button class="filtres" data-cat="laptop">laptop</button>
+        <button class="filtres" data-cat="mobile">mobile</button>
+           <button class="filtres" data-cat="watch">watch</button>
+    </div>
+
+    <div class="container">
+    <div class="card">
+        <div class="card1" data-cat="laptop">
+    <img src="mackbook.jpg " alt="mackbook" width="200px" height="200px">
+    <h3>Laptop</h3>
+    <p>₹50000</p>
+    <button>Add to Cart</button>
+    </div>
+    <div class="card1" data-cat="laptop"> 
+        <img src="mackbook.jpg " alt="mackbook" width="200px" height="200px">
+    <h3>Laptop</h3>
+    <p>₹50000</p>
+    <button>Add to Cart</button>
+    </div>
+    <div class="card1" data-cat="laptop">
+        <img src="mackbook.jpg " alt="mackbook" width="200px" height="200px">
+    <h3>Laptop</h3>
+    <p>₹50000</p>
+    <button>Add to Cart</button>
+    </div>
+    <div class="card1" data-cat="laptop">
+        <img src="mackbook.jpg " alt="mackbook" width="200px" height="200px">
+    <h3>La ptop</h3>
+    <p>₹50000</p>
+    <button>Add to Cart</button>
+    </div>
+    <!-- second line -->
+     <div class="card1" data-cat="mobile">
+        <img src="mobile.jpg" alt="mobile" width="200px" height="200px">
+        <h3>Mobile</h3>
+        <p>₹90000</p>
+          <button>Add to Cart</button>
+     </div>
+      <div class="card1" data-cat="mobile">
+        <img src="mobile.jpg" alt="mobile" width="200px" height="200px">
+        <h3>Mobile</h3>
+        <p>₹90000</p>
+          <button>Add to Cart</button>
+     </div>
+      <div class="card1" data-cat="mobile">
+        <img src="mobile.jpg" alt="mobile" width="200px" height="200px">
+        <h3>Mobile</h3>
+        <p>₹90000</p>
+          <button>Add to Cart</button>
+     </div>
+      <div class="card1" data-cat="mobile">
+        <img src="mobile.jpg" alt="mobile" width="200px" height="200px">
+        <h3>Mobile</h3>
+        <p>₹90000</p>
+          <button>Add to Cart</button>
+     </div>
+       <div class="card1" data-cat="watch">
+        <img src="mobile.jpg" alt="mobile" width="200px" height="200px">
+        <h3>Mobile</h3>
+        <p>₹90000</p>
+          <button>Add to Cart</button>
+     </div>
+</div>
+</div>
+
+
+</div>
+<script>
+    // let buttons = document.querySelectorAll('button');
+    // buttons.forEach(button => {
+    //     button.addEventListener('click', () => {
+    //         alert('Product added to cart!');
+    //     });
+    // });
+    let buttons = document.querySelectorAll('.filtres');
+    let cards = document.querySelectorAll('.card1');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            let watch=button.getAttribute('data-cat');
+            cards.forEach(card => {
+                if (watch === 'watch') {
+                    card.style.display = 'block';
+                    console.log("watch");
+                } else {
+                    console.log("no watch ");
+                    
+                }
+            });
+        });
+    });
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            let cat = button.getAttribute('data-cat');
+            cards.forEach(card => {
+                if (cat === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    if (card.getAttribute('data-cat') === cat) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

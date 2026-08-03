@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BOM Demo</title>
+</head>
+<body>
+
+<button onclick="openWin()">Open Window</button>
+
+<br><br>
+
+<button onclick="moveto()">moveTo</button>
+
+<button onclick="moveby()">moveBy</button>
+
+<br><br>
+
+<button onclick="resizeto()">resizeTo</button>
+
+<button onclick="resizeby()">resizeBy</button>
+
+<br><br>
+
+<button onclick="scrolltoo()">scrollTo</button>
+
+<button onclick="scrollbyy()">scrollBy</button>
+
+<div style="height:2000px;"></div>
+
+<script>
+
+let mywin;
+
+function openWin(){
+
+   mywin = window.open(
+      "",
+      "",
+      "width=200,height=200"
+   );
+
+}
+
+function moveto(){
+
+   mywin.moveTo(100,100);
+
+}
+
+function moveby(){
+
+   mywin.moveBy(100,100);
+
+}
+
+function resizeto(){
+
+   mywin.resizeTo(400,400);
+
+}
+
+function resizeby(){
+
+   mywin.resizeBy(100,100);
+
+}
+
+function scrolltoo(){
+
+   window.scrollTo(0,500);
+
+}
+
+function scrollbyy(){
+
+   window.scrollBy(0,100);
+
+}
+
+</script>
+
+</body>
+</html>

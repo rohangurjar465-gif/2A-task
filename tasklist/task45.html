@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoooooooo</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            
+        }
+        #input {
+            width: 500px;
+            padding: 10px;
+            margin-right: 10px;
+          
+        }
+        #button {
+            padding: 10px 20px;
+            border: none;
+        }
+        #list{
+            /* list-style-type: none; */
+        
+            padding: 0;
+          
+           
+        }
+        #list li {
+               width: 500px;
+            margin: auto;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        #main{
+         width: 700px;
+         background-color: antiquewhite;
+           
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <input type="text" id="input" placeholder="enter task">
+    <button id="button">click</button>
+    
+   <ol id="list"></ol>
+    </div>
+     
+    
+    <script>
+        let toodo=[];
+        let input=document.querySelector("#input");
+        let btn =document.querySelector("#button");
+        let task=document.querySelector("#list");
+        btn.addEventListener("click",()=>{
+            let data=input.value;
+            toodo.push(data);
+            input.value="";
+            start();
+        });
+
+       function start() {
+        task.innerHTML="";
+        toodo.forEach(item => {
+            task.innerHTML+=`<li>${item}</li>`;
+        });
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* #one{
+    height: 100px;
+    width: 500px;
+    border-width: 10px;
+    border-style: solid;
+    background-color: aquamarine;
+    
+} */
+/* 
+div{
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+    border: 5px solid navy;
+
+    /* border-radius: 25px; */
+    /* padding: 1 2 3 4; */
+    /* margin: 1 2 3 4;
+ } */
+
+/*  
+#two{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50px;
+} */
+ #one{
+    height: 180px;
+    width: 100px;
+    background-color: black;
+  
+    
+ }
+
+#two{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgb(255, 0,0);
+      border: 2px solid rgb(244, 244, 249);
+      margin-left: 19px;
+       margin-bottom: 7px;
+}
+
+#three{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgb(211, 188, 9);
+      border: 2px solid rgb(244, 244, 249);
+       margin-left: 19px;
+       margin-bottom: 7px;
+}
+
+#four{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgb(11, 240, 11);
+      border: 2px solid rgb(244, 244, 249);
+       margin-left: 19px;
+       margin-bottom: 7px;
+}
+
+#piller{
+    height: 500px;
+    width: 10px;
+    background-color: black;
+    border: 2px solid white;
+    margin-left: 40px;
+}

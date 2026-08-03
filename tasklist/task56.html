@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Show Hide Password</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+
+input{
+padding:10px;
+width:250px;
+}
+
+button{
+padding:10px 20px;
+margin-left:10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h2>Show / Hide Password</h2>
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password">
+
+<button id="btn">
+Show
+</button>
+
+<script>
+
+let password=document.querySelector("#password");
+
+let btn=document.querySelector("#btn");
+
+btn.addEventListener("click",()=>{
+
+if(password.type==="password"){
+
+password.type="text";
+
+btn.innerHTML="Hide";
+
+}
+
+else{
+
+password.type="password";
+
+btn.innerHTML="Show";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>

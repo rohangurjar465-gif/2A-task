@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition</title>
+
+    <style>
+
+        .card{
+            width:200px;
+            padding:20px;
+            background:lightgray;
+            margin:20px;
+            transition:0.9s;
+            transition-delay: 0.2s;
+        }
+
+        .card:hover{
+            transform:scale(1.1);
+            background:lightblue;
+        }
+
+        button{
+            padding:10px 1px;
+            background:blue;
+            color:white;
+            border:none;
+            transition:0.5s;
+        }
+
+        button:hover{
+            background:rgb(254, 241, 7);
+            color: blue;
+            font-size: large;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Card</h2>
+        <p>Hover Effect</p>
+        <button>Hover Me</button>
+
+    </div>
+
+    
+</body>
+</html>

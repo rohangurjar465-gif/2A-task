@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="res()">assing</button>
+        <button onclick="rep()">replace</button>
+            <button onclick="rel()">reload</button>
+
+    <script>
+   function res(){
+      location.assign("https://google.com");
+   }
+
+   function rep() {
+    location.replace("https://google.com");
+   }
+
+   function rel() {
+     location.reload();
+     console.log("reload");
+
+     
+   }
+   document.write(location.href);
+    </script>
+</body>
+</html>

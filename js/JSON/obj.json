@@ -1,0 +1,9 @@
+{
+    "name":"rohan",
+    "Age":21,
+    "Adress":{
+        "Country":"india",
+        "City":"khategaon",
+        "Village":"behadi"
+    }
+}

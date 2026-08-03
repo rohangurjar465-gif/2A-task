@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inpute" placeholder="enter number , , , ,">
+    <button id="asc">asc</button>
+    <button id="desc">desc</button>
+    <h3 id="result"></h3>
+    <script>
+        let number=document.querySelector("#inpute");
+        let btn=document.querySelector("#asc");
+        let rslt=document.querySelector("#result");
+        let dbtn=document.querySelector("#desc");
+
+   btn.addEventListener("click",()=>{
+        let num=number.value.split(",");
+          num=num.map(Number);
+          num.sort((a,b)=>a-b);
+            rslt.innerHTML=num.join(", ");
+       
+           
+
+        });
+         dbtn.addEventListener("click",()=>{
+        let num=number.value.split(",");
+          num=num.map(Number);
+          num.sort((a,b)=>b-a);
+            rslt.innerHTML=num.join(", ");
+       
+           
+
+        });
+    </script>
+</body>
+</html>

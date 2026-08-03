@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       .main{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(204, 209, 209);
+            margin: 20px auto;
+            padding: 25px;
+            
+        }
+           
+        
+        .main h2{
+            text-align: center;
+        }
+        .main input{
+           
+   margin-top: 2px;
+    size: 2px;
+  
+
+        }
+ .main button{
+    display: block;
+    size: 20px;
+    margin: 6px auto;
+    button:hover{
+   
+        background-color: rgb(25, 50, 50);
+        color: white;
+    }
+ }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <form action="">
+      <h2>  register form</h2>USERNAME
+       <input type="text" name="username">EMAIL
+       <input type="text" name="email">CODE
+       <input type="text" name="code">
+       <br>
+       <button>submit</button>
+    </form>
+    </div>
+ 
+</body>
+
+<script>
+let main=document.querySelector(".main form");
+  let userdata=[];
+ main.addEventListener("submit",(ev)=>{
+  
+  
+
+    let name=ev.target.username.value;
+ let email=ev.target.email.value;
+  let code=ev.target.code.value;
+
+ let useobj={
+    name,
+    email,
+    code
+ }
+
+ userdata.push(useobj);
+    console.log(userdata);
+    // console.log(name);
+    // console.log(email);
+    // console.log(code);
+    
+    
+    
+    ev.preventDefault();
+
+    
+
+ })
+</script>
+</html>

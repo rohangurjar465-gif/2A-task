@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">0</p>
+    <button id="inc">inc</button>
+</body>
+
+<script>
+    let a = document.querySelector("#para");
+    let btn = document.querySelector("#inc");
+    let count = 1;
+
+    btn.addEventListener("click", () => {
+
+        while (true) {
+            count++;
+            let prime = 0;
+
+            for (let i = 1; i <= count; i++) {
+                if (count % i === 0) {
+                    prime++;
+                }
+            }
+
+            if (prime ==2) {
+                a.innerHTML = count;
+                break;
+            }
+        }
+
+    });
+</script>
+</html>

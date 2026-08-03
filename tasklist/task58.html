@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ans {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Q">HTML</div>
+
+    <div class="ans">
+        HTML stands for HyperText Markup Language
+    </div>
+
+    <div class="Q">CSS</div>
+
+    <div class="ans">
+        CSS is used for styling
+    </div>
+
+    <div class="Q">JavaScript</div>
+
+    <div class="ans">
+        JavaScript is a programming language
+    </div>
+    <script>
+      let QUS=document.querySelectorAll(".Q");
+     let ans = document.querySelectorAll(".ans");
+        
+          QUS.forEach(items => {
+            items.addEventListener("click", () => {
+                // ans.forEach((an) => {
+
+                //     an.classList.remove("active");
+
+                // });
+
+                let next = items.nextElementSibling;
+
+
+
+                // ye prent k accroding chlg isk km hai next prperti ko stor krn turnt bd bli 
+                next.classList.add("active");
+
+            });
+        });
+    </script>
+</body>
+
+</html>

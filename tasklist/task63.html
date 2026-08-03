@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop watch</title>
+</head>
+<body>
+    <h2>
+   
+    </h2>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <button id="clear">clear</button>
+    <script>
+        let clock=document.querySelector("h2");
+        let start=document.querySelector("#start");
+        let stop=document.querySelector("#stop");
+        let clear=document.querySelector("#clear");
+ let timer;
+ let min=0;
+
+        start.addEventListener("click",function(){
+            let time=0;
+             timer=setInterval(function(){ 
+                time++;             
+    if (time === 60) {
+      min++;
+      time = 0;
+    }
+                clock.innerHTML=`${min}:${time}`;
+            },1000);
+        });
+        
+        stop.addEventListener("click",()=>{
+            clearInterval(timer);
+
+        });
+    clear.addEventListener("click",()=>{
+        clearInterval(timer);
+        min=0;
+        clock.innerHTML="0:0";
+    });
+
+           
+    </script>
+</body>
+</html>

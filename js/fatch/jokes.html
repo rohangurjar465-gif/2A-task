@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parra">
+
+    </p>
+  <script>
+    // let url="https://official-joke-api.appspot.com/random_joke";
+    // let parra=document.querySelector("#parra");
+//    async function dat(){
+//          let promise=await fetch(url);
+//         //    console.log(promise);
+//         let data=await promise.json();
+//         console.log(data);
+//        parra.innerHTML = data.setup + "<br><br>" + data.punchline;
+
+//    }
+//    dat();
+let url = "https://dummyjson.com/users/add";
+    let parra=document.querySelector("#parra");
+async function dat2(){
+
+    let response = await fetch(url,{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify({
+            firstName:"Rohan",
+            lastName:"gurjar",
+            age:20
+        })
+    });
+
+    let data = await response.json();
+
+    console.log(data);
+    parra.innerHTML = data.firstName + "<br><br>" + data.lastName + "<br><br>" + data.age;
+
+}
+
+dat2();
+
+
+// post data to the server using fetch api
+</script>
+</body>
+</html>

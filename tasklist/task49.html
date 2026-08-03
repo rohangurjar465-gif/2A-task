@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pelendromm</title>
+</head>
+<body>
+    <input type="text" id="value" placeholder="enter value">
+    <button id="btn">click</button>
+    <h3 id="result"></h3>
+    <script>
+        let val=document.querySelector("#value");
+        let btn=document.querySelector("#btn");
+        let rslt=document.querySelector("#result");
+
+        btn.addEventListener("click",()=>{
+        let word=val.value;
+        let revrs=word.split("").reverse().join("");
+        if (word===revrs) {
+            rslt.innerHTML="pelndrom";
+        } else {
+            rslt.innerHTML="not pelnedrom";
+        }
+        })
+    </script>
+</body>
+</html>

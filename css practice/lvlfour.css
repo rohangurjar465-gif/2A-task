@@ -1,0 +1,88 @@
+/* body{
+    text-align: center;
+} */
+/* div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 3px solid black;
+  
+} */
+#container{
+   
+   height: 200px;
+   width: 1500px;
+    display: flex;
+    flex-direction: row;
+   /* flex-direction: column;   */
+   /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly;  */
+     /* justify-content: center; */
+    /* flex-wrap: wrap-reverse; */
+    /* align-items: center;  */
+    /* align-content: flex-start; */
+
+} 
+#box1{
+background-color: rgb(81, 13, 13);
+/* align-self: flex-end; */
+/* flex-shrink: 0.5; */
+}
+
+#box2{
+    background-color: darkslateblue;
+}
+
+#box3{
+    background-color: rgb(69, 122, 17);
+}
+
+#box4{
+    background-color: rgb(205, 175, 135);
+
+
+}
+/* @media{ */
+    /* isme divece ke hisb se arrnge kr skt width: ; */
+
+/* ye dusra hai niche bala div ke andr center box ke lit use kiya */
+
+#navbar{
+    background-color: burlywood; 
+     display: flex;
+     justify-content: space-evenly;
+}
+a{
+    background-color: chartreuse;
+    text-decoration: none;
+  
+
+}
+li{
+ list-style: none;
+ display: inline;
+ justify-content: space-evenly;
+}
+
+
+#outer{
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner{
+    background-color: brown;
+    height: 150px;
+    width: 150px;
+    
+}
+@media(min-width: 300px ){
+ #outer{
+    background-color: rgb(29, 0, 252);
+ }
+}

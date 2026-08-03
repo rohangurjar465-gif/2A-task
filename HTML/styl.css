@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* NAVBAR */
+header{
+    background:#0b2c4a;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00bfff;
+}
+
+/* HERO */
+.hero{
+    height:300px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1549921296-3a6b6f2c6b39');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.section{
+    padding:50px;
+    text-align:center;
+}
+
+.dark{
+    background:#0b2c4a;
+    color:white;
+}
+
+/* CAR CARDS */
+.card-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    width:200px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    color:#0b2c4a;
+}
+
+/* TABLE */
+table{
+    width:70%;
+    margin:auto;
+    border-collapse:collapse;
+    margin-top:30px;
+}
+
+table th, table td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+table th{
+    background:#00bfff;
+    color:white;
+}
+
+/* FEATURES */
+.features{
+    list-style:none;
+    margin-top:20px;
+}
+
+.features li{
+    padding:10px;
+    font-size:18px;
+}
+
+/* FOOTER */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
+}

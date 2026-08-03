@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Star Rating</title>
+
+<style>
+
+.star{
+font-size:50px;
+cursor:pointer;
+color:gray;
+}
+
+.active{
+color:gold;
+}
+
+</style>
+
+</head>
+<body>
+<div class="main">
+    <h3>rating my product ikojb</h3>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+</div>
+<script>
+
+let stars=document.querySelectorAll(".star");
+
+stars.forEach((star,index)=>{
+
+star.addEventListener("click",()=>{
+
+stars.forEach((s)=>{
+
+s.classList.remove("active");
+
+});
+
+for(let i=0;i<=index;i++){
+
+stars[i].classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

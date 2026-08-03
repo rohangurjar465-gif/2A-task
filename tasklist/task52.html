@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+
+    <style>
+        body {
+
+            font-family: Arial;
+            text-align: center;
+            margin-top: 40px;
+
+        }
+
+        input {
+
+            width: 250px;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        button {
+
+            padding: 10px 20px;
+
+        }
+
+        #error {
+
+            color: red;
+            margin-top: 20px;
+
+        }
+
+        #success {
+
+            color: green;
+            margin-top: 20px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+    
+    <input type="text" id="name" placeholder="Enter Name">
+    <br>
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <br>
+    <input type="password" id="password" placeholder="Enter Password">
+    <br>
+    <button id="btn">
+        Submit
+    </button>
+
+    <h3 id="error"></h3>
+
+    <h3 id="success"></h3>
+
+    <script>
+
+        let name = document.querySelector("#name");
+
+        let email = document.querySelector("#email");
+
+        let password = document.querySelector("#password");
+
+        let btn = document.querySelector("#btn");
+
+        let error = document.querySelector("#error");
+
+        let success = document.querySelector("#success");
+
+        btn.addEventListener("click", () => {
+
+            error.innerHTML = "";
+
+            success.innerHTML = "";
+
+            if (name.value === "") {
+                error.innerHTML = "Please Enter Name";
+
+                return;
+
+            }
+
+            if (email.value === "") {
+                error.innerHTML = "Please Enter Email";
+
+                return;
+
+            }
+
+            if (password.value.length < 6) {
+                error.innerHTML = "Password must be at least 6 characters";
+
+                return;
+
+            }
+
+            success.innerHTML = "Form Submitted Successfully";
+
+        });
+
+    </script>
+
+</body>
+
+</html>

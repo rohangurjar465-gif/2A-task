@@ -1,0 +1,65 @@
+     #loader{
+    width: 60px;
+    height: 60px;
+    border: 8px solid lightgray;
+    border-top: 8px solid blue;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+    display: none;
+
+    margin: 50px auto;
+}
+
+@keyframes spin{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+table{
+
+width:80%;
+
+margin:auto;
+
+border-collapse:collapse;
+
+}
+
+th{
+
+background:royalblue;
+
+color:white;
+
+padding:10px;
+
+}
+
+td{
+
+padding:10px;
+
+}
+/* 
+tr:nth-child(even){
+
+background:#f2f2f2;
+
+} */
+
+button{
+
+padding:10px 20px;
+
+margin:20px;
+
+cursor:pointer;
+
+}

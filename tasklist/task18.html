@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Timeline</title>
+
+<style>
+
+body{
+    font-family:Arial;
+}
+
+.timeline{
+    position:relative;
+
+    width:300px;
+
+    margin:auto;
+}
+.center{
+    text-align:center;
+    margin:20px;
+
+}
+
+<!-- /* Vertical Line */
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    width:4px;
+    height:100%;
+    background:blue;
+}
+
+/* Circle */
+.box::after{
+    content:"";
+    position:absolute;   
+        left:145px;
+
+    width:15px;    height:15px;
+    background:red;
+    border-radius:50%;
+} 
+
+
+.box{
+    position:relative;
+    background:lightgray;
+    padding:20px;
+    margin:30px 0;
+  border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 class="center">Student Journey</h1>
+
+<div class="timeline">
+
+    <div class="box">
+        School
+    </div>
+
+    <div class="box">
+        College
+    </div>
+
+    <div class="box">
+        Internship
+    </div>
+
+    <div class="box">
+        Job
+    </div>
+    <div class="box">
+        Startup
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+

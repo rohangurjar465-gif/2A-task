@@ -1,0 +1,106 @@
+/* div{
+    /* background-color: aquamarine; */
+    /* display: inline;
+  background-color: rgba(255, 0, 0,1);
+
+/* } */ 
+
+/* 
+header{
+    height: 40px;
+  
+    background-color: rgb(236, 229, 96);
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+#logo{
+
+    margin-left: 5px;
+    margin-bottom: 20px;
+color: rgb(16, 14, 2);
+}
+
+#account{
+    color: rgb(15, 25, 33);
+    margin-left: 250px;
+   
+
+}
+
+#mycart{
+ color: alieblue;
+ margin-left: 250px;
+
+}
+#contect{
+    color: rgb(6, 24, 40);
+    margin-left: 250px;
+
+}
+
+#pl{
+    margin-left: 270px;
+}
+
+#serch{
+    margin-left: 5px;
+} */
+ 
+div{
+    background-color: rgb(145, 137, 137);
+    height: 100px;
+    width: 100px;
+       display: inline-block;   
+} 
+#box1{
+    height: 150px;
+    width: 150px;
+    background-image: url("flag.jpg");
+    background-size: cover;
+}
+
+#box2{
+    height: 150px;
+    width: 150px;
+    background-image: url("flag.jpg");
+    background-size: cover;
+}
+
+#box3{
+    height: 150px;
+    width: 150px;
+    background-image: url("flag.jpg");
+    background-size: cover;
+}
+
+#box4{
+    height: 150px;
+    width: 150px;
+    background-image: url("flag.jpg");
+    background-size: cover;
+}
+
+
+
+
+/* #box1{
+   position: relative;
+   top: 20px;
+}
+#box2{
+    position: fixed;
+    top: 0px;
+} */
+
+
+/* #test{
+    background-color: blue;
+     font-size: 100px;
+
+}
+#tst2{
+    background-color: rgb(160, 153, 167);
+    font-size: 1em;
+} */
+/* ye font size ke liye use hai prent ka size se chlt hai 1 mtlb upr ke brbr */

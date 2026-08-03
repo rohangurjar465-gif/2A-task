@@ -1,0 +1,42 @@
+
+div{
+    height: 30px;
+    width: 1000px;
+    background-color: black;
+    border: 2px solid rgb(138, 162, 29);
+
+}
+
+#logo{
+    
+color: gold;
+}
+
+#account{
+    color: aliceblue;
+    margin-left: 100px;
+
+}
+
+#mycart{
+ color: alieblue;
+ margin-left: 80px;
+
+}
+#contect{
+    color: aliceblue;
+    margin-left: 80px;
+
+}
+
+#pl{
+    margin-left: 250px;
+}
+
+#serch{
+    margin-left: 20px;
+}
+
+ div :active{
+    background-color: red;
+}

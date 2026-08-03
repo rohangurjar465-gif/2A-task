@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add to cart</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div id="main" style="display: flex; gap: 10px;">
+       <h3>laptop</h3>
+       <p>50000</p>
+       <button  class="btn">add to cart</button>
+        <h3>mobile</h3>
+       <p>50000</p>
+       <button class="btn">add to cart</button>
+        <h3>ps5</h3>
+       <p>50000</p>
+       <button  class="btn">add to cart</button>
+        <h3>tab</h3>
+       <p>50000</p>
+       <button  class="btn">add to cart</button>
+       </div>
+       <ul id="cart">
+
+       </ul>
+       <h3 id="total">
+        total:0
+       </h3>
+       <script>
+        let sum=0;
+        let main=document.querySelector("#main");
+        let btn=document.querySelectorAll(".btn");
+        let cart=document.querySelector("#cart");
+                let total=document.querySelector("#total");
+btn.forEach(item => {
+    
+
+        item.addEventListener("click",()=>{
+
+               let name = item.previousElementSibling.previousElementSibling.innerHTML;
+            let li=document.createElement("li");
+       let a=  item.nextElementSibling;
+            li.innerHTML= name +"50000";
+               cart.append(li);
+            sum=sum+50000;
+          total.innerHTML="total:"+sum;
+               });
+               });
+       </script>
+    
+</body>
+</html>

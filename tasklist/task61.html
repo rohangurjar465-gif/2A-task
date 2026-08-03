@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+
+    <style>
+        #city{
+            display: none;
+        }
+
+        #show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="menu">city</button>
+
+    <ul id="city">
+        <li>Indore</li>
+        <li>Bhopal</li>
+        <li>Delhi</li>
+        <li>Mumbai</li>
+        <li>Pune</li>
+    </ul>
+
+    <script>
+
+        let main = document.querySelector("#menu");
+        let city = document.querySelector("#city");
+
+        main.addEventListener("click", () => {
+
+            city.classList.toggle("show");
+
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .new{
+            height: 500px;
+            width: 200px;
+               /* margin-top: 30px; */
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+          align-content: center;     
+              /* ye aling item js hai bas isme jo bihc ki spce rhti hai usk cover kr lt hai */ 
+             /* align-items: flex-end;       */
+                   /* item ko rkht hai kah rkhn hai ks rkhn hai upr nich vertice me  */ 
+               /* flex-direction: row; */
+               /* isme hum div box inko row colum revers sb kr skt hai  */
+            border: 2px solid black;
+    flex-wrap: wrap;   
+    /* isk kam jesa bada box chhot hai andr k box adujst krn ka liy use hot hai 3 typ k y     */
+ 
+
+        
+            
+          
+        }
+        div{
+            /* margin: 30px; */
+            /* margin-bottom: 0px; */
+
+        }
+        #demo{
+                width: 100px;
+                height: 100px;
+               
+                background-color: yellow;
+            }
+            #demoo{
+                background-color: red;
+                  
+       width: 100px;
+       height: 100px;
+            }
+             #dmoo{
+                background-color: rgb(85, 69, 69);
+                  
+       width: 100px;
+       height: 100px;
+            }
+            .rotat{
+                width: 150px;
+                height: 150px;
+                background-color: rgb(70, 64, 39);
+                position: relative;
+                left: 250px;
+                bottom: 80px;
+                 border: 20px solid rgb(204, 175, 196);
+                 border-top: 20px solid rgb(185, 18, 18);
+                 border-radius: 50%;
+
+                 animation: demo 5s ease-in 0s infinite reverse;
+
+            }
+        @keyframes demo {
+/* 
+             from{
+                transform:translatey(100px) ;
+            }
+            to{
+               transform:translatex(100px);
+            } */
+            from{
+                transform:scale(0.1) ;
+            }
+            to{
+               transform:scale(1.5);
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="new">
+        <div id="demo">
+          
+        </div>
+         <div id="demoo">
+            
+        </div>
+        <div id="dmoo">
+            
+        </div>
+    </div>
+
+
+    <div  class="rotat">
+
+    </div>
+</body>
+</html>

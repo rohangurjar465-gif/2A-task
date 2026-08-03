@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.card{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    text-align: center;
+    padding: 15px;
+    transition: .3s;
+}
+
+.card:hover{
+    transform: scale(1);
+}
+
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3{
+    margin-top: 10px;
+}
+
+.price{
+    color: red;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.details{
+    background: royalblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.details:hover{
+    background: blue;
+}
+
+/* Modal */
+
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+        transition: opacity .4s ease;
+
+}
+
+.modal-content{
+    width: 400px;
+    background: white;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-content h2{
+    margin-top: 15px;
+}
+
+.modal-content p{
+    margin: 10px 0;
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.modal-content button{
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-content button:hover{
+    background: darkgreen;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close:hover{
+    color: red;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.products{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.products{
+
+grid-template-columns:1fr;
+
+}
+
+.modal-content{
+
+width:90%;
+
+}
+
+}

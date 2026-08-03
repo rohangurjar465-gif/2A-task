@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a=10;
+    let b=20;
+    let temp ;
+ console.log(a,b);
+ 
+    temp=a;//10
+    a=b;//10
+    b=temp;
+    console.log(a,b);
+
+    console.log(10<5);
+    
+    let obj={
+        name: "rohan",
+        age:20
+    }
+    for (let key in obj) {
+        console.log(key);
+        console.log(obj[key]);             
+    }
+    let arr=[10,20,30];
+
+    for (const dem of arr) {
+        console.log(dem);
+        
+    }
+   for(let x=1; x<=2; x++){
+       for(let y=1; y<=10; y++){
+        console.log(`${x}*${y}=${x*y}`);
+       }
+       
+   }
+// console.log(3*"20");
+function name(n,param) {
+    param();
+}
+function grt(){
+console.log("callback");
+
+}
+name("rohan",grt);
+
+
+let arw=()=>{
+    console.log("arrow");
+    
+}
+    arw();
+
+    function count(str){
+        console.log(str.split(" ").length);
+        
+    }
+
+    count("ro ro ro ro ro");
+</script>
+</html>

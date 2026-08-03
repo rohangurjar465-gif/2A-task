@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+
+    </p>
+    <button id="btn">
+ botton
+    </button>
+</body>
+<script>
+    let url="https://jsonplaceholder.typicode.com/users";
+   let demo=document.querySelector("#demo");
+   let btn=document.querySelector("#btn");
+let data;
+
+  async function dat(){
+         let promise=await fetch(url);
+    console.log(promise);
+     data=await promise.json();
+      demo.innerHTML=data[0].name;
+    }
+   
+btn.addEventListener("click",()=>{});
+
+    
+</script>
+
+</html>

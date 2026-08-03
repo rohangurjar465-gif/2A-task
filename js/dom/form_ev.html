@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form id="form">
+  <input type="text">
+  <button type="submit">Submit</button>
+</form>
+ <br><br>
+  <input type="text" id="in">
+  <br><br>
+  <input type="text" id="focus">
+  <br><br><br>`
+ <input type="text" id="chng">
+<p id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Similique delectus iste reprehenderit repudiandae aut autem rem, inventore deserunt alias illum voluptatibus neque magni quos asperiores quam eos sit consectetur tempora.</p>
+</body>
+<script>
+ let a = document.querySelector("#form");
+a.addEventListener("submit", function(e){
+    e.preventDefault();
+    console.log("submit ho gaya bhai");
+});
+
+let b = document.querySelector("#in");
+b.addEventListener("blur", ()=>{
+    console.log("blur ho gaya");
+});
+
+let c = document.querySelector("#focus");
+c.addEventListener("focus", ()=>{   //
+    console.log("focus ho gaya");
+});
+ 
+let d = document.querySelector("#chng"); 
+let p=document.querySelector("#p");
+d.addEventListener("change", ()=>{     
+    console.log("change ho gaya");
+    p.style.color="red";
+});
+
+</script>
+</html>
