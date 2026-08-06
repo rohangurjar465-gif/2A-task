@@ -9,22 +9,26 @@
     <input type="text" id="gues" placeholder="inter number">
     <button id="button">clike</button>
     <h2 id="page"></h2>
+    <h2 id="no"></h2>
     <script>
         let random=Math.floor(Math.random()*4+1);
 
         let guess=document.querySelector("#gues");
         let btn=document.querySelector("#button");
         let result=document.querySelector("#page");
-        
+        let num=document.querySelector("#no");
         
         
       btn.addEventListener("click",()=>{
         console.log(random);
         let res=Number(guess.value);
         if (res==random) {
-            result.innerHTML="you win";
+            result.innerHTML=`you win${random}`;
+
         } else {
             result.innerHTML="lose";
+            result.innerHTML=`you lose${random}`;
+
         }
       });
 
