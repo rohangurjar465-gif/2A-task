@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--container--prodcut);
+}
+
+:root {
+    --red: #df4938;
+    --container--prodcut:#f2f0f0;
+    --red-bg: #bd292e;
+    --footer-x:#383838;
+    --footer:#2B2B2B;
+    
+}
+
+.hero {
+    min-height: 100vh;
+    background:var(--red-bg);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.hero-row {
+    min-height: 85vh;
+}
+
+.headphone {
+    transition: .4s;
+    margin-bottom: 80px;
+    
+}
+
+.headphone:hover {
+    transform: translateY(-10px);
+}
+.sound-pro{
+    margin-bottom: 35%;
+  /* upr lihk vo hai ye */
+}
+
+.white-bg {
+    width: 110%;
+    height: 45%;
+    background:white;
+    position: absolute;
+    left: -5%;
+    bottom: -25%;
+    transform: rotate(-11deg);
+    z-index: 1;
+}
+
+.prodcut-container{
+    background-color:var(--container--prodcut);
+}
+.product {
+    width: 260px;
+    height: 260px;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature {
+    min-height: 280px;
+}
+
+.feature i {
+    font-size: 45px;
+    color: var(--red);
+}
+
+.feature p:last-child {
+    color: var(--red);
+    font-size: 25px;
+}
+.secetion-part{
+    color: var(--red);
+}
+
+/* bnnr */
+.banner{
+    margin-left: 13%;
+    margin-top: 3%;
+    color: #363232;
+    font-weight: bold;
+}
+
+.playlogo{
+    color: var(--red);
+    margin-right: 13%;
+
+}
+
+/* banner ke niche */
+.feature-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background:var(--red);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon i {
+    font-size: 30px;
+}
+
+.feature-headphone {
+    max-width: 600px;
+}
+
+/* feture k niche */
+
+.smater-head #shopheadphoness { 
+margin-top: 13%;
+font-size: larger;
+}
+.smater-head{
+    background-color: var(--red-bg);
+    height: 1100px;
+}
+
+/* smart than ke nich */
+/* customer reveu */
+.headphone-overlap {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    margin-bottom: -45%;
+}
+
+.headphone-overlap img {
+    max-width: 500px;
+}
+
+/* customer-review class k bg  */
+.cusomer-reviews {
+    background: var(--red-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.cusomer-reviews .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* White background neeche rahega */
+.headphone-space {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 42%;
+    z-index: 1;
+}
+
+/* Headphone red + white ke bich */
+.headphone-overlap {
+    position: relative;
+    z-index: 3;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.headphone-overlap img {
+    max-width: 500px;
+    width: 100%;
+}
+/* x-footer */
+.x-footer{
+    background-color: var(--footer-x);
+    height: 140px;;
+}
+.main-footer{
+    background-color: var(--footer);
+}
+.copy-footer{
+        background-color: var(--footer);
+            height: 130px;
+            
+}
+@media (max-width: 991px) {
+
+    .hero-row {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .white-bg {
+        height: 30%;
+        bottom: -15%;
+    }
+
+    .product {
+        width: 240px;
+        height: 240px;
+            margin: auto;
+
+    }
+ .banner{
+        text-align: left;
+        font-size: large;
+        margin-left:auto;
+        margin-top: 1px;
+    }
+     .desktop-br {
+        display: none;
+  
+
+    }
+    .girl-inside  p {
+          font-weight: 100;
+          padding-right: 29px;
+          font-size: x-small;
+    }
+    .hhero-img{
+        width:30%;
+        height: 30%;
+    }
+    .headphone-space {
+        height: 40%;
+    }
+
+    .headphone-overlap img {
+        width: 80%;
+    }
+  
+}
+
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+    .hhero-img{
+        width:30%;
+        height: 30%;
+    }
+
+    .product {
+        width: 280px;
+        height: 280px;
+            margin: auto;
+
+    }
+    .product img {
+        width: 75%;
+        height: 75%;
+    }
+
+    .white-bg {
+        height: 25%;
+        bottom: -10%;
+    }
+     .feature-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .feature-icon i {
+        font-size: 20px;
+    }
+    .banner{
+        text-align: left;
+        font-size: small;
+        margin-left: 0px;
+        margin-top: 1px;
+    }
+    .smater-head{
+    background-color: var(--red-bg);
+    height: 1400px;
+ }
+
+    .headphone-overlap img {
+        width: 80%;
+        
+    }
+}
+  
+
+
+@media (min-width: 992px) {
+
+    .prodcut-container .row {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .product {
+        width: 260px;
+        height: 260px;
+        margin: auto;
+       
+    }
+
+    .feature {
+        max-width: 240px;
+        margin: auto;
+    }
+
+    .product img {
+        width: 100%;
+        height: 100%;
+    }
+    
+}
