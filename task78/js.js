@@ -6,31 +6,36 @@ sort.addEventListener("change", function () {
 
     let cards = Array.from(document.querySelectorAll(".card"));
 
-    if (sort.value == "low") {
+    cards.sort(function (a, b) {
 
-        cards.sort(function (a, b) {
+        let price1 = a.querySelector(".price").innerText;
+        let price2 = b.querySelector(".price").innerText;
 
-            let price1 = a.querySelector(".price").innerText;
-            let price2 = b.querySelector(".price").innerText;
+        // ₹ hatao aur number banao
+        price1 = Number(price1.replace("₹", ""));
+        price2 = Number(price2.replace("₹", ""));
+
+
+        if (sort.value === "low") {
 
             return price1 - price2;
 
-        });
+        }
 
-    }
-
-    if (sort.value == "high") {
-
-        cards.sort(function (a, b) {
-
-            let price1 = a.querySelector(".price").innerText;
-            let price2 = b.querySelector(".price").innerText;
+        else if (sort.value === "high") {
 
             return price2 - price1;
 
-        });
+        }
 
-    }
+        else {
+
+            return 0;
+
+        }
+
+    });
+
 
     cards.forEach(function (card) {
 
