@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,5 +25,133 @@ button:hover{
 </head>
 <body>
  <button>clgjety</button>   
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#202a44;
+    font-family:Arial;
+}
+
+.game{
+    text-align:center;
+    color:white;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,80px);
+    gap:10px;
+}
+
+.card{
+    height:80px;
+    background:#5865f2;
+    border:none;
+    border-radius:10px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="game">
+
+    <h1>Memory Game 🧠</h1>
+
+    <div class="cards">
+
+        <button class="card" data-value="🍎">?</button>
+        <button class="card" data-value="🍌">?</button>
+        <button class="card" data-value="🍎">?</button>
+        <button class="card" data-value="🍌">?</button>
+
+        <button class="card" data-value="🐶">?</button>
+        <button class="card" data-value="🐱">?</button>
+        <button class="card" data-value="🐶">?</button>
+        <button class="card" data-value="🐱">?</button>
+
+    </div>
+
+    <h2 id="result"></h2>
+
+</div>
+
+<script>
+
+let cards = document.querySelectorAll(".card");
+
+let firstCard = null;
+let secondCard = null;
+
+
+cards.forEach((card) => {
+
+    card.addEventListener("click", () => {
+        // Card ka hidden data lo
+        let value = card.dataset.value;
+        // Card dikhao
+        card.innerHTML = value;
+        // First Click
+        if(firstCard === null){
+
+            firstCard = card;
+
+        }
+        // Second Click
+        else{
+            secondCard = card;
+            // Match Check
+            if(firstCard.dataset.value === secondCard.dataset.value){
+
+                document.querySelector("#result").innerHTML = "Match! ";
+
+            }
+
+            else{
+
+                document.querySelector("#result").innerHTML = "Try Again";
+
+
+                setTimeout(() => {
+
+                    firstCard.innerHTML = "?";
+                    secondCard.innerHTML = "?";
+                },1000);
+            }
+            // Reset
+            firstCard = null;
+            secondCard = null;
+
+        }
+    });
+
+});
+
+</script>
+
 </body>
 </html>

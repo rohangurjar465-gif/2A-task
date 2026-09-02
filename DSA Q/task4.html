@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subarry</title>
+    <!-- Subarray
+Continuous elements -->
+
+</head>
+<body>
+    <script>
+
+
+let arr=[1,2,10,20,30,5];
+let target=55;
+for (let i = 0; i < arr.length; i++) {
+     let sum=0;
+     for (let j = i; j<arr.length; j++){
+      sum=sum+arr[j];
+      if (sum==target) {
+        console.log(`start:${i}`);
+        console.log(`end:${j}`);
+        
+           console.log(arr.slice(i, j + 1));  
+      }
+     }
+}
+
+    </script>
+</body>
+</html>
